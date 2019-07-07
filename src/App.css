@@ -1,9 +1,5 @@
 .App {
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.4fr 2fr 0.3fr;
-  grid-template-areas: "." "." ".";
   background: lightgrey;
 }
 
