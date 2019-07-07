@@ -4,8 +4,14 @@ import { data } from "./mock/productsData";
 import "./App.css";
 
 function App() {
+  const headerStyle = { background: "lightgreen" };
+  const footerStyle = { background: "lightgreen" };
   return (
-    <div className="App">clean up - {JSON.stringify(data.slice(0, 20))}</div>
+    <div className="App">
+      <div style={headerStyle}>header</div>
+      <div>main - {JSON.stringify(data.slice(0, 20))}</div>
+      <div style={footerStyle}>footer</div>
+    </div>
   );
 }
 
