@@ -8,4 +8,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   min-height: 100vh;
+  box-sizing: border-box;
+}
+
+body > div {
+  min-height: 100vh;
 }

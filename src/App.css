@@ -1,8 +1,26 @@
 .App {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  padding: 16px;
   min-height: 100vh;
   background: lightgrey;
 }
 
 .App > div {
   padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .App {
+    padding: 42px 32px 64px 42px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .App {
+    padding-bottom: 64px;
+    padding-top: 64px;
+  }
 }
