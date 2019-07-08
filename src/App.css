@@ -5,11 +5,10 @@
   width: 100%;
   padding: 16px;
   min-height: 100vh;
-  background: lightgrey;
+  background: #f6f6f6;
 }
 
-.App > div,
-.App > header {
+.App > div {
   padding: 10px;
   box-sizing: border-box;
 }
