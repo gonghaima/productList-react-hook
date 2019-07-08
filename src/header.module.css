@@ -5,6 +5,9 @@ header h2 {
   margin: 0;
   color: #6a6a6a;
 }
+summary {
+  color: #bfbfbf;
+}
 .displaySelection {
   display: flex;
   justify-content: space-between;
