@@ -9,7 +9,9 @@ import mainStyles from "./main.module.css";
 function App() {
   return (
     <div className="App">
-      <div className={styles.general}>header</div>
+      <header className={styles.general}>
+        <h2>All Products</h2>
+      </header>
       <div className={mainStyles.general}>
         main - {JSON.stringify(data.slice(0, 20))}
       </div>
