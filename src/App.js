@@ -23,6 +23,7 @@ function App() {
           </select>
         </div>
       </header>
+      <hr />
       <div className={mainStyles.general}>
         main - {JSON.stringify(data.slice(0, 20))}
       </div>
