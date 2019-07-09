@@ -5,10 +5,16 @@ header h2 {
   margin: 0;
   color: #6a6a6a;
 }
-summary {
+header summary {
   color: #bfbfbf;
+  text-align: center;
+  line-height: 28px;
+}
+header select {
+  height: 28px;
 }
 .displaySelection {
   display: flex;
+  background: lightsalmon;
   justify-content: space-between;
 }
