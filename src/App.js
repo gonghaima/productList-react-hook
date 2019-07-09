@@ -24,9 +24,11 @@ function App() {
         </div>
       </header>
       <hr />
-      <div className={mainStyles.general}>
-        main - {JSON.stringify(data.slice(0, 20))}
-      </div>
+      <ul className={mainStyles.general}>
+        {data.slice(0, 20).map(item => (
+          <li>{item.product_name}</li>
+        ))}
+      </ul>
       <div className={footerStyles.general}>footer</div>
     </div>
   );
