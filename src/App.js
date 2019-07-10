@@ -26,7 +26,11 @@ function App() {
       <hr />
       <ul className={mainStyles.general}>
         {data.slice(0, 20).map(item => (
-          <li>{item.product_name}</li>
+          <li>
+            <div>
+              <img src={item.product_image} />
+            </div>
+          </li>
         ))}
       </ul>
       <div className={footerStyles.general}>footer</div>
