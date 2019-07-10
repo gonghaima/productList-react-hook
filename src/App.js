@@ -27,9 +27,14 @@ function App() {
       <ul className={mainStyles.general}>
         {data.slice(0, 20).map(item => (
           <li>
-            <div>
+            <figure>
               <img src={item.product_image} />
-            </div>
+            </figure>
+            <hgroup>
+              <h4>Heading 1</h4>
+              <h5>Subheading 1</h5>
+              <h6>Subheading 2</h6>
+            </hgroup>
           </li>
         ))}
       </ul>

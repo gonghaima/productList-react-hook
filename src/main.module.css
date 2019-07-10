@@ -9,7 +9,8 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 ul li {
-  display: block;
+  display: grid;
+  grid-template-rows: 2fr 0.5fr;
 }
 img {
   width: 100%;
