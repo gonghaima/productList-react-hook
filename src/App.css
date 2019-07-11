@@ -19,6 +19,18 @@ h6 {
   margin: 0;
 }
 
+/* h4,
+h5,
+h6 {
+  margin: 5px auto 5px 22px;
+}
+h4 {
+  margin-top: 8px;
+}
+h6 {
+  margin-bottom: 8px;
+} */
+
 @media (min-width: 768px) {
   .App {
     padding: 32px 64px;

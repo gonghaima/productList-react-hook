@@ -23,4 +23,13 @@ figure {
 
 hgroup {
   border: 1px solid;
+  padding: 8px 0px 8px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+hgroup h4,
+hgroup h5,
+hgroup h6 {
+  display: block;
 }
