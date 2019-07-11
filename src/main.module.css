@@ -11,8 +11,16 @@ ul {
 ul li {
   display: grid;
   grid-template-rows: 2fr 0.5fr;
+  border: 1px solid;
 }
 img {
   width: 100%;
   height: auto;
+}
+figure {
+  display: flex;
+}
+
+hgroup {
+  border: 1px solid;
 }
