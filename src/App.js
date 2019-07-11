@@ -31,9 +31,9 @@ function App() {
               <img src={item.product_image} />
             </figure>
             <hgroup>
-              <h4>Heading 1</h4>
-              <h5>Subheading 1</h5>
-              <h6>Subheading 2</h6>
+              <h4>{item.product_name}</h4>
+              <h5>{item.description}</h5>
+              <h6>{item.price}</h6>
             </hgroup>
           </li>
         ))}
