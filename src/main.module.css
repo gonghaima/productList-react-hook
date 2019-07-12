@@ -2,6 +2,7 @@
   background: lightblue;
   min-height: 75vh;
   padding: 5px;
+  border: 1px solid;
 }
 ul {
   display: grid;
@@ -20,16 +21,16 @@ img {
 figure {
   display: flex;
 }
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Lato, sans-serif;
+}
 
 hgroup {
   border: 1px solid;
-  padding: 8px 0px 8px 10px;
+  padding: 15px 0px 15px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-hgroup h4,
-hgroup h5,
-hgroup h6 {
-  display: block;
+  justify-content: space-around;
 }

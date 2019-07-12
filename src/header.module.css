@@ -1,6 +1,4 @@
-header {
-  background: lightgreen;
-}
+
 header h2 {
   margin: 0;
   color: #6a6a6a;
@@ -12,9 +10,11 @@ header summary {
 }
 header select {
   height: 28px;
+  color: #7a7a7a;
+  border: 0;
 }
+
 .displaySelection {
   display: flex;
-  background: lightsalmon;
   justify-content: space-between;
 }
