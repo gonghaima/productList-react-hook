@@ -23,7 +23,7 @@ function App() {
           </select>
         </div>
       </header>
-      <hr />
+      <hr className={headerStyles.split} />
       <ul className={mainStyles.general}>
         {data.slice(0, 20).map(item => (
           <li>
