@@ -34,3 +34,12 @@ hgroup {
   flex-direction: column;
   justify-content: space-around;
 }
+.product_name {
+  color: #6a6a6a;
+  font-size: 16px;
+}
+
+.product_description {
+  color: #bfbfbf;
+  font-size: 16px;
+}
