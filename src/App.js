@@ -35,7 +35,7 @@ function App() {
               <h5 className={mainStyles.product_description}>
                 {item.description}
               </h5>
-              <h6>{item.price}</h6>
+              <h6 className={mainStyles.product_price}>{item.price}</h6>
             </hgroup>
           </li>
         ))}
