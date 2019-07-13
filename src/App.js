@@ -27,16 +27,18 @@ function App() {
       <ul className={mainStyles.general}>
         {data.slice(0, 20).map(item => (
           <li>
-            <figure>
-              <img src={item.product_image} />
-            </figure>
-            <hgroup>
-              <h4 className={mainStyles.product_name}>{item.product_name}</h4>
-              <h5 className={mainStyles.product_description}>
-                {item.description}
-              </h5>
-              <h6 className={mainStyles.product_price}>{item.price}</h6>
-            </hgroup>
+            <div className={mainStyles.content}>
+              <figure>
+                <img src={item.product_image} />
+              </figure>
+              <div className={mainStyles.hgroup}>
+                <h4 className={mainStyles.product_name}>{item.product_name}</h4>
+                <h4 className={mainStyles.product_description}>
+                  {item.description}
+                </h4>
+                <h6 className={mainStyles.product_price}>{item.price}</h6>
+              </div>
+            </div>
           </li>
         ))}
       </ul>
