@@ -3,4 +3,5 @@
 ## TODO
 
 - [x] layout styling
-- [ ] implement react-paginate lib
+- [x] implement react-paginate lib
+- [ ] styling the react-paginate component
