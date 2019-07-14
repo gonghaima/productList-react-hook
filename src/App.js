@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import { data } from "./mock/productsData";
 import "./App.css";
 import "./header.module.css";
+import ReactPaginate from "react-paginate";
 import headerStyles from "./header.module.css";
 import footerStyles from "./footer.module.css";
 import mainStyles from "./main.module.css";
@@ -43,6 +44,19 @@ function App() {
         ))}
       </ul>
       <div className={footerStyles.general}>footer</div>
+      <ReactPaginate
+        previousLabel={"< previous page"}
+        nextLabel={"next page >"}
+        breakLabel="..."
+        breakClassName="break-me"
+        pageCount={20}
+        marginPagesDisplayed={2}
+        pageRangeDisplayed={5}
+        onPageChange={() => {}}
+        containerClassName="pagination"
+        subContainerClassName="pages pagination"
+        activeClassName="active"
+      />
     </div>
   );
 }
