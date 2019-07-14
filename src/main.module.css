@@ -7,7 +7,6 @@
 ul {
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: repeat(3, 1fr);
   width: 100%;
 }
 .content {
@@ -66,6 +65,20 @@ h2 {
   display: block;
   color: #272727;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  ul {
+    grid-gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  ul {
+    grid-gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 1280px) {
