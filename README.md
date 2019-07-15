@@ -5,3 +5,4 @@
 - [x] layout styling
 - [x] implement react-paginate lib
 - [ ] styling the react-paginate component
+- [ ] use variables for css property
