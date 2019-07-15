@@ -43,20 +43,21 @@ function App() {
           </li>
         ))}
       </ul>
-      <div className={footerStyles.general}>footer</div>
-      <ReactPaginate
-        previousLabel={"< previous page"}
-        nextLabel={"next page >"}
-        breakLabel="..."
-        breakClassName="break-me"
-        pageCount={20}
-        marginPagesDisplayed={2}
-        pageRangeDisplayed={5}
-        onPageChange={() => {}}
-        containerClassName="pagination"
-        subContainerClassName="pages pagination"
-        activeClassName="active"
-      />
+      <div className={footerStyles.general}>
+        <ReactPaginate
+          previousLabel={"< previous page"}
+          nextLabel={"next page >"}
+          breakLabel="..."
+          breakClassName="break-me"
+          pageCount={20}
+          marginPagesDisplayed={2}
+          pageRangeDisplayed={5}
+          onPageChange={() => {}}
+          containerClassName="pagination"
+          subContainerClassName="pages pagination"
+          activeClassName="active"
+        />
+      </div>
     </div>
   );
 }
