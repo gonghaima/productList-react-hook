@@ -1,10 +1,8 @@
-.general {
+.ul {
   background: #f6f6f6;
   min-height: 75vh;
   padding: 0;
   border-radius: 0.4rem;
-}
-ul {
   display: grid;
   grid-gap: 5px;
   width: 100%;
@@ -16,7 +14,7 @@ ul {
   box-sizing: border-box;
   width: 100%;
 }
-ul li {
+.li {
   display: flex;
   background: #ffffff;
   flex-direction: column;
@@ -67,21 +65,21 @@ h2 {
 }
 
 @media (min-width: 768px) {
-  ul {
+  .ul {
     grid-gap: 32px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
-  ul {
+  .ul {
     grid-gap: 32px;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1280px) {
-  ul {
+  .ul {
     grid-gap: 32px;
     grid-template-columns: repeat(4, 1fr);
   }

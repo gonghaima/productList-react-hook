@@ -19,17 +19,15 @@ h6 {
   margin: 0;
 }
 
-/* h4,
-h5,
-h6 {
-  margin: 5px auto 5px 22px;
+.pagination {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-h4 {
-  margin-top: 8px;
+
+.pagination li {
+  display: inline-block;
 }
-h6 {
-  margin-bottom: 8px;
-} */
 
 @media (min-width: 768px) {
   .App {
