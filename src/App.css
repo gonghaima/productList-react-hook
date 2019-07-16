@@ -46,7 +46,10 @@ h6 {
   outline: unset;
   border-bottom: 3px solid #272727;
 }
-
+.disabled a {
+  color: #bfbfbf;
+  cursor: not-allowed;
+}
 @media (min-width: 768px) {
   .App {
     padding: 32px 64px;
