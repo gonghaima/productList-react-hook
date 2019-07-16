@@ -41,6 +41,12 @@ h6 {
   text-decoration: none;
 }
 
+.active a {
+  background: #fff;
+  outline: unset;
+  border-bottom: 3px solid #272727;
+}
+
 @media (min-width: 768px) {
   .App {
     padding: 32px 64px;
