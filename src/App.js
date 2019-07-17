@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import { data } from "./mock/productsData";
 import "./App.css";
 import "./header.module.css";
@@ -30,7 +29,7 @@ function App() {
           <li className={mainStyles.li}>
             <div className={mainStyles.content}>
               <figure>
-                <img src={item.product_image} />
+                <img src={item.product_image} alt={item.product_name} />
               </figure>
               <div className={mainStyles.hgroup}>
                 <h4 className={mainStyles.product_name}>{item.product_name}</h4>
