@@ -31,7 +31,7 @@ h6 {
 
 .pagination a {
   z-index: 3;
-  color: #000;
+  color: #272727;
   cursor: pointer;
   position: relative;
   float: left;
@@ -48,7 +48,8 @@ h6 {
 }
 .disabled a {
   color: #bfbfbf;
-  cursor: not-allowed;
+  cursor: default;
+  outline: none;
 }
 @media (min-width: 768px) {
   .App {

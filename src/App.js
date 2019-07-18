@@ -44,8 +44,8 @@ function App() {
       </ul>
       <div className={footerStyles.general}>
         <ReactPaginate
-          previousLabel={"< previous page"}
-          nextLabel={"next page >"}
+          previousLabel={"< Previous page"}
+          nextLabel={"Next page >"}
           breakLabel="..."
           breakClassName="break-me"
           pageCount={20}
