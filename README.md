@@ -7,6 +7,6 @@
 - [ ] styling the react-paginate component
   - [x] active items
   - [x] disabled items
-  - [ ] responsive
+  - [x] responsive
 - [ ] use variables for css property
 - [ ] build a pagination component
