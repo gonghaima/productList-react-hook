@@ -39,6 +39,12 @@ h6 {
   margin-left: -1px;
   line-height: 1.42857143;
   text-decoration: none;
+  outline: unset;
+}
+
+.pagination a:hover {
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .active a {
@@ -46,10 +52,13 @@ h6 {
   outline: unset;
   border-bottom: 3px solid #272727;
 }
-.disabled a {
+.disabled a,
+.disabled a:hover {
   color: #bfbfbf;
   cursor: default;
   outline: none;
+  font-size: 16px;
+  font-weight: unset;
 }
 @media (min-width: 768px) {
   .App {
