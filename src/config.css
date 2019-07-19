@@ -12,4 +12,9 @@
   --product-name-color: #6a6a6a;
   --product-description-color: #bfbfbf;
   --product-price-color: #272727;
+
+  --font-size-xs: 10px;
+  --font-size-sm: 16px;
+  --font-size-m: 17px;
+  --font-size-r1: 1.5em;
 }

@@ -43,11 +43,11 @@ h6 {
   line-height: 1.42857143;
   text-decoration: none;
   outline: unset;
-  font-size: 10px;
+  font-size: var(--font-size-xs)
 }
 
 .pagination a:hover {
-  font-size: 17px;
+  font-size: var(--font-size-m);
   font-weight: bold;
 }
 
@@ -62,14 +62,14 @@ h6 {
   cursor: default;
   outline: none;
   font-weight: unset;
-  font-size: 16px;
+  font-size: var(--font-size-sm)
 }
 @media (min-width: 768px) {
   .App {
     padding: 32px 64px;
   }
   .pagination a {
-    font-size: 16px;
+    font-size: var(--font-size-sm)
   }
 }
 

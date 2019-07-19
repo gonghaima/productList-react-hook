@@ -1,3 +1,4 @@
+@import url("./config.css");
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
+  font-size: var(--font-size-sm);
   min-height: 100vh;
   box-sizing: border-box;
 }

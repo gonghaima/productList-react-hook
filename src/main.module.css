@@ -36,7 +36,7 @@ figure {
   box-sizing: border-box;
 }
 h2 {
-  font-size: 1.5em;
+  font-size: var(--font-size-r1);
   font-weight: bold;
   font-family: Lato, sans-serif;
 }
@@ -50,7 +50,7 @@ h2 {
 }
 .product_name {
   color: var(--product-name-color);
-  font-size: 16px;
+  font-size: var(--font-size-sm);
   margin: 16px 0px 8px 32px;
   display: block;
 }
