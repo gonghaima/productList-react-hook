@@ -1,6 +1,5 @@
-:root {
-  --app-bg-color: #f6f6f6;
-}
+@import "config.css";
+
 .App {
   box-sizing: border-box;
   margin: 0;
