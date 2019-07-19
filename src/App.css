@@ -1,5 +1,5 @@
 /* @import "config.css"; */
-@import url("config.css");
+@import url("./config.css");
 
 .App {
   box-sizing: border-box;
@@ -62,6 +62,7 @@ h6 {
   cursor: default;
   outline: none;
   font-weight: unset;
+  font-size: 16px;
 }
 @media (min-width: 768px) {
   .App {

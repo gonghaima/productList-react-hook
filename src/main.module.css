@@ -1,7 +1,7 @@
-/* @import "config.css"; */
-@import url("config.css");
+@import "config.css";
+
 .ul {
-  background: var(--main-ul-color);
+  background: #fff;
   min-height: 75vh;
   padding: 0;
   border-radius: 0.4rem;
