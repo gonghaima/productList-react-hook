@@ -1,21 +1,24 @@
+/* @import "config.css"; */
+@import url("config.css");
+
 header h2 {
   margin: 0;
-  color: #6a6a6a;
+  color: var(--h2-header-color);
 }
 header summary {
-  color: #bfbfbf;
+  color: var(--header-summary-color);
   text-align: center;
   line-height: 28px;
 }
 header select {
   height: 28px;
-  color: #7a7a7a;
+  color: var(--header-select-color);
   border: 0;
 }
 
 .split {
   width: 98%;
-  border: 0.5px solid #e5e5e5;
+  border: 0.5px solid var(--hr-color);
 }
 
 .displaySelection {

@@ -1,5 +1,7 @@
+/* @import "config.css"; */
+@import url("config.css");
 .ul {
-  background: #f6f6f6;
+  background: var(--main-ul-color);
   min-height: 75vh;
   padding: 0;
   border-radius: 0.4rem;
@@ -16,7 +18,7 @@
 }
 .li {
   display: flex;
-  background: #ffffff;
+  background: var(--main-li-color);
   flex-direction: column;
   border: solid 0.08rem #e5e5e5;
   border-radius: 0.4rem;
@@ -41,26 +43,26 @@ h2 {
 
 .hgroup {
   display: block;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid var(--main-hgroup-border-color);
   text-align: left;
   width: 100%;
   display: block;
 }
 .product_name {
-  color: #6a6a6a;
+  color: var(--product-name-color);
   font-size: 16px;
   margin: 16px 0px 8px 32px;
   display: block;
 }
 
 .product_description {
-  color: #bfbfbf;
+  color: var(--product-description-color);
   margin: 8px 0px 8px 32px;
 }
 
 .product_price {
   display: block;
-  color: #272727;
+  color: var(--product-price-color);
   margin: 8px 0px 16px 32px;
 }
 

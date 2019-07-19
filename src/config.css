@@ -1,3 +1,15 @@
 :root {
   --app-bg-color: #f6f6f6;
+  --general-anchor-color: #272727;
+  --active-anchor-color: #fff;
+  --disabled-anchor-color: #bfbfbf;
+  --h2-header-color: #6a6a6a;
+  --header-summary-color: #bfbfbf;
+  --header-select-color: #7a7a7a;
+  --hr-color: #e5e5e5;
+  --main-ul-color: #f6f6f6;
+  --main-hgroup-border-color: #e5e5e5;
+  --product-name-color: #e5e5e5;
+  --product-description-color: #bfbfbf;
+  --product-price-color: #272727;
 }
