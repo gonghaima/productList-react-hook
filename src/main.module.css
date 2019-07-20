@@ -38,7 +38,7 @@ figure {
 h2 {
   font-size: var(--font-size-r1);
   font-weight: bold;
-  font-family: Lato, sans-serif;
+  font-family: var(--font-family-default);
 }
 
 .hgroup {

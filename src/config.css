@@ -13,6 +13,9 @@
   --product-description-color: #bfbfbf;
   --product-price-color: #272727;
 
+  --font-family-default: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   --font-size-xs: 10px;
   --font-size-sm: 16px;
   --font-size-m: 17px;
