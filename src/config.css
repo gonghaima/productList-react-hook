@@ -20,4 +20,7 @@
   --font-size-sm: 16px;
   --font-size-m: 17px;
   --font-size-r1: 1.5em;
+
+  --product-grid-gap-xs: 5px;
+  --product-grid-gap-sm: 32px;
 }

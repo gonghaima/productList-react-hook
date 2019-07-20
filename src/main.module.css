@@ -6,7 +6,7 @@
   padding: 0;
   border-radius: 0.4rem;
   display: grid;
-  grid-gap: 5px;
+  grid-gap: var(--product-grid-gap-xs);
   width: 100%;
 }
 .content {
@@ -68,21 +68,19 @@ h2 {
 
 @media (min-width: 768px) {
   .ul {
-    grid-gap: 32px;
+    grid-gap: var(--product-grid-gap-sm);
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
   .ul {
-    grid-gap: 32px;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1280px) {
   .ul {
-    grid-gap: 32px;
     grid-template-columns: repeat(4, 1fr);
   }
 }
