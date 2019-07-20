@@ -1,7 +1,7 @@
 @import "config.css";
 
 .ul {
-  background: #fff;
+  background: var(--main-ul-color);
   min-height: 75vh;
   padding: 0;
   border-radius: 0.4rem;
