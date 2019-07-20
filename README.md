@@ -10,3 +10,33 @@
   - [x] responsive
 - [ ] use variables for css property
 - [ ] build a pagination component
+
+## NOTES
+
++ CSS variables
+    * css variables works inside of the css selector, like 
+      ```javascript
+      .myClass {
+          font-size: var(--my-self-defined-size)
+      }
+      ```
+    * not works in media query, like
+      ```javascript
+      @media (min-width: var(--my-self-defined-size)) {
+        ...
+      }
+      ```
+    * a few options there
+      - sass or postCSS
+      - use media query at root to assign different values to the same variable
+
+    ```javascript
+        :root {
+        /* desktop vars */
+        }
+        @media screen and (max-width: 479px) {
+            :root {
+            /* mobile vars */
+            }
+        }
+    ```
