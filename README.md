@@ -9,6 +9,8 @@
   - [x] disabled items
   - [x] responsive
 - [x] use variables for css property
+- [ ] use context/hook to manage global state
+- [ ] use real api to replace mock api
 - [ ] build a pagination component
 
 ## NOTES
