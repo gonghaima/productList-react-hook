@@ -1,6 +1,6 @@
 import React, { useState, useReducer, useEffect } from "react";
 
-export const StoreContext = createContext();
+export const Context = createContext();
 
 const Provider = ({ children, reducer }) => {
   const [store, dispatch] = useReducer(reducer);
@@ -12,9 +12,9 @@ const Provider = ({ children, reducer }) => {
   }, []);
 
   return (
-    <StoreContext.Provider value={{ dispatch, store }}>
+    <Context.Provider value={{ dispatch, store }}>
       {state.isLoaded ? children : false}
-    </StoreContext.Provider>
+    </Context.Provider>
   );
 };
 
