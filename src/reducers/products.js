@@ -1,10 +1,12 @@
 import { data } from "../mock/productsData";
 
 const products = (state = data, action) => {
-  if (action.type === "DISPLAY_ALL_PRODUCT") {
-    return { ...state, data: action.payload };
+  switch (action.type) {
+    case "DISPLAY_ALL_PRODUCT":
+      return { ...state, data: action.payload };
+    default:
+      return state;
   }
-  return state;
 };
 
 export default products;

@@ -1,21 +1,13 @@
-import React, { useState, useReducer, useEffect } from "react";
+import React from "react";
+import reducers from "../reducers";
+export const Store = React.createContext();
 
-export const Context = createContext();
-
-const Provider = ({ children, reducer }) => {
-  const [store, dispatch] = useReducer(reducer);
-  const [state, setState] = useState({ isLoaded: false });
-
-  useEffect(() => {
-    dispatch({ type: "@init" });
-    setState({ isLoaded: true });
-  }, []);
-
-  return (
-    <Context.Provider value={{ dispatch, store }}>
-      {state.isLoaded ? children : false}
-    </Context.Provider>
-  );
+const initialState = {
+  products: []
 };
 
-export default Provider;
+export function StoreProvider(props) {
+  const [state, dispatch] = React.useReducer(reducers, initialState);
+  const value = { state, dispatch };
+  return <Store.Provider value={value}>{props.children}</Store.Provider>;
+}
