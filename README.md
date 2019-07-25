@@ -14,6 +14,7 @@ ttps://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5
   - [x] disabled items
   - [x] responsive
 - [x] use variables for css property
+- [ ] use env to store url, etc.
 - [ ] use context/hook to manage global state
   - [ ] add mock in global context
   - [ ] read it in root component
