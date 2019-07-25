@@ -26,7 +26,7 @@ function App() {
       <hr className={headerStyles.split} />
       <ul className={mainStyles.ul}>
         {data.slice(0, 20).map(item => (
-          <li className={mainStyles.li}>
+          <li key={`${item.product_name}_${item.id}`} className={mainStyles.li}>
             <div className={mainStyles.content}>
               <figure>
                 <img src={item.product_image} alt={item.product_name} />

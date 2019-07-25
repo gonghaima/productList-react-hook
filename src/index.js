@@ -2,13 +2,13 @@ import React from "react";
 import { render } from "react-dom";
 import "./index.css";
 import App from "./App";
-import reducers from "./reducers";
+import { StoreProvider } from "./store";
 import * as serviceWorker from "./serviceWorker";
 
 const Main = () => (
-  <Provider reducer={reducers}>
+  <StoreProvider>
     <App />
-  </Provider>
+  </StoreProvider>
 );
 
 render(<Main />, document.getElementById("root"));
