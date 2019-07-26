@@ -1,12 +1,15 @@
 import { data } from "../mock/productsData";
 
-const products = (state = data, action) => {
+const product = (state, action) => {
   switch (action.type) {
-    case "DISPLAY_ALL_PRODUCT":
-      return { ...state, data: action.payload };
+    case "FETCH_DATA":
+      const ns = { ...state, ...{ products: action.payload } };
+      debugger;
+      return ns;
     default:
+      debugger;
       return state;
   }
 };
 
-export default products;
+export default product;

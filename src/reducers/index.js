@@ -1,8 +1,8 @@
 import combineReducers from "./combineReducers";
-import products from "./products";
+import product from "./products";
 
 const reducer = combineReducers({
-  products
+  product
 });
 
 export default reducer;

@@ -6,11 +6,24 @@ import ReactPaginate from "react-paginate";
 import headerStyles from "./header.module.css";
 import footerStyles from "./footer.module.css";
 import mainStyles from "./main.module.css";
+import { Store } from "./store";
+import { fetchDataAction } from "./actions";
 
 function App() {
-  console.log(
-    `process.env.REACT_APP_API_URL is ${process.env.REACT_APP_API_URL}`
-  );
+  // console.log(
+  //   `process.env.REACT_APP_API_URL is ${process.env.REACT_APP_API_URL}`
+  // );
+
+  const { state, dispatch } = React.useContext(Store);
+
+  React.useEffect(() => {
+    // state.episodes.length === 0 && fetchDataAction(dispatch);
+    state.products && state.products.length === 0 && fetchDataAction(dispatch);
+    if (state && state.products && state.products.length > 0) {
+      debugger;
+      console.log(`state.products.length:${state.products.length}`);
+    }
+  }, [state]);
 
   return (
     <div className="App">
