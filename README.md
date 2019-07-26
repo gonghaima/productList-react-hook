@@ -14,7 +14,7 @@ ttps://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5
   - [x] disabled items
   - [x] responsive
 - [x] use variables for css property
-- [ ] use .env to store url, etc.
+- [x] use .env to store url, etc.
 - [ ] use & enable router to support absolute url of current page
 - [ ] use context/hook to manage global state
   - [ ] add mock in global context
