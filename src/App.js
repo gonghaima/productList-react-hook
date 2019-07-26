@@ -8,6 +8,10 @@ import footerStyles from "./footer.module.css";
 import mainStyles from "./main.module.css";
 
 function App() {
+  console.log(
+    `process.env.REACT_APP_API_URL is ${process.env.REACT_APP_API_URL}`
+  );
+
   return (
     <div className="App">
       <header>
