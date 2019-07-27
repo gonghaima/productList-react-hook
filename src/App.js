@@ -10,20 +10,14 @@ import { Store } from "./store";
 import { fetchDataAction } from "./actions";
 
 function App() {
-  // console.log(
-  //   `process.env.REACT_APP_API_URL is ${process.env.REACT_APP_API_URL}`
-  // );
-
   const { state, dispatch } = React.useContext(Store);
 
   React.useEffect(() => {
-    // state.episodes.length === 0 && fetchDataAction(dispatch);
-    state.products && state.products.length === 0 && fetchDataAction(dispatch);
+    state.products.length === 0 && fetchDataAction(dispatch);
     if (state && state.products && state.products.length > 0) {
-      debugger;
       console.log(`state.products.length:${state.products.length}`);
     }
-  }, [state]);
+  }, [dispatch, state]);
 
   return (
     <div className="App">

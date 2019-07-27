@@ -8,7 +8,6 @@ export const fetchDataAction = async dispatch => {
 
   return dispatch({
     type: "FETCH_DATA",
-    // payload: dataJSON._embedded.episodes
     payload: data
   });
 };
