@@ -20,6 +20,7 @@ ttps://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5
   - [ ] add mock in global context
   - [ ] read it in root component
 - [ ] use real api to replace mock api
+- [ ] fix cors issue
 - [ ] build a pagination component
 
 ## NOTES
