@@ -2,9 +2,7 @@ import React from "react";
 import { data } from "./mock/productsData";
 import "./App.css";
 import "./header.module.css";
-import ReactPaginate from "react-paginate";
 import headerStyles from "./header.module.css";
-import footerStyles from "./footer.module.css";
 import mainStyles from "./main.module.css";
 import { Store } from "./store";
 import { fetchDataAction } from "./actions";
@@ -61,9 +59,7 @@ function App() {
           </li>
         ))}
       </ul>
-      <div className={footerStyles.general}>
-        <Pagination />
-      </div>
+      <Pagination />
     </div>
   );
 }
