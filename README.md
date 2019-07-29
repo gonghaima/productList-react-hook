@@ -15,7 +15,7 @@ ttps://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5
   - [x] responsive
 - [x] use variables for css property
 - [x] use .env to store url, etc.
-- [ ] pass state to pagination component, so pagination reflect the status of data
+- [x] pass state to pagination component, so pagination reflect the status of data
 - [ ] use & enable router to support absolute url of current page
 - [ ] use context/hook to manage global state
   - [ ] add mock in global context
