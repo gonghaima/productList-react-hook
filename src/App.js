@@ -8,6 +8,7 @@ import footerStyles from "./footer.module.css";
 import mainStyles from "./main.module.css";
 import { Store } from "./store";
 import { fetchDataAction } from "./actions";
+import Pagination from "./components/Pagination";
 
 function App() {
   const { state, dispatch } = React.useContext(Store);
@@ -18,6 +19,13 @@ function App() {
       console.log(`state.products.length:${state.products.length}`);
     }
   }, [dispatch, state]);
+
+  const props = {
+    products: state.products,
+    hasNext: state.hasNext,
+    hasPrevious: state.hasPrevious,
+    total: state.products.length
+  };
 
   return (
     <div className="App">
@@ -54,19 +62,7 @@ function App() {
         ))}
       </ul>
       <div className={footerStyles.general}>
-        <ReactPaginate
-          previousLabel={"< Previous page"}
-          nextLabel={"Next page >"}
-          breakLabel="..."
-          breakClassName="break-me"
-          pageCount={20}
-          marginPagesDisplayed={2}
-          pageRangeDisplayed={5}
-          onPageChange={() => {}}
-          containerClassName="pagination"
-          subContainerClassName="pages pagination"
-          activeClassName="active"
-        />
+        <Pagination />
       </div>
     </div>
   );

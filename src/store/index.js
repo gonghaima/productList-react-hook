@@ -3,7 +3,13 @@ import reducers from "../reducers";
 export const Store = React.createContext();
 
 const initialState = {
-  products: []
+  products: [],
+  hasNext: false,
+  hasPrevious: false,
+  total: 0,
+  pageCount: 15,
+  marginPagesDisplayed: 2,
+  pageRangeDisplayed: 5
 };
 
 export function StoreProvider(props) {
