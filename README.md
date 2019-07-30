@@ -17,7 +17,7 @@ ttps://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5
 - [x] use .env to store url, etc.
 - [x] pass state to pagination component, so pagination reflect the status of data
 - [x] pagination - dispatch an event onPageChange
-- [ ] product list - use fetched data from real api
+- [x] product list - use fetched data from real api
 - [ ] use & enable router to support absolute url of current page
 - [ ] use context/hook to manage global state
   - [ ] add mock in global context
