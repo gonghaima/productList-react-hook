@@ -9,7 +9,8 @@ const initialState = {
   total: 0,
   pageCount: 15,
   marginPagesDisplayed: 2,
-  pageRangeDisplayed: 5
+  pageRangeDisplayed: 5,
+  itemPerPage:50
 };
 
 export function StoreProvider(props) {

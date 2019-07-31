@@ -1,7 +1,10 @@
 const product = (state, action) => {
   switch (action.type) {
     case "FETCH_DATA":
-      const ns = { ...state, ...action.payload };
+      const pageCount = Math.ceil(
+        action.payload.products.length / state.itemPerPage
+      );
+      const ns = { ...state, ...action.payload, ...{ pageCount } };
       return ns;
     default:
       return state;
