@@ -3,7 +3,6 @@ import ReactPaginate from "react-paginate";
 import { Store } from "../store";
 import footerStyles from "../footer.module.css";
 
-
 export default () => {
   const { state, dispatch } = React.useContext(Store);
   return (
@@ -16,6 +15,7 @@ export default () => {
         pageCount={state.pageCount}
         marginPagesDisplayed={state.marginPagesDisplayed}
         pageRangeDisplayed={state.pageRangeDisplayed}
+        initialPage={state.initialPage}
         onPageChange={() =>
           dispatch({
             type: "SET_PAGE",
