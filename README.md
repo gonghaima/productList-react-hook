@@ -21,7 +21,7 @@ https://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5
 - [x] pagination - set up initial page
 - [x] select - dispatch an action on change
 - [x] product list - use fetched data from real api
-- [ ] make header into seperate component
+- [x] make header into seperate component
 - [ ] use & enable router to support absolute url of current page
 - [ ] use context/hook to manage global state
   - [ ] add mock in global context
