@@ -7,6 +7,7 @@ import mainStyles from "./main.module.css";
 import { Store } from "./store";
 import { fetchDataAction } from "./actions";
 import Pagination from "./components/Pagination";
+import Selection from "./components/Selection";
 
 function App() {
   const { state, dispatch } = React.useContext(Store);
@@ -31,13 +32,7 @@ function App() {
         <h2>All Products</h2>
         <div className={headerStyles.displaySelection}>
           <summary>1000 products</summary>
-          <select>
-            <option value="4">4 per page</option>
-            <option value="8">8 per page</option>
-            <option value="10">10 per page</option>
-            <option value="20">20 per page</option>
-            <option value="40">40 per page</option>
-          </select>
+          <Selection />
         </div>
       </header>
       <hr className={headerStyles.split} />
