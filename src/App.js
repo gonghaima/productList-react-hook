@@ -7,7 +7,7 @@ import mainStyles from "./main.module.css";
 import { Store } from "./store";
 import { fetchDataAction } from "./actions";
 import Pagination from "./components/Pagination";
-import Selection from "./components/Selection";
+import Header from "./components/Header";
 
 function App() {
   const { state, dispatch } = React.useContext(Store);
@@ -28,13 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <h2>All Products</h2>
-        <div className={headerStyles.displaySelection}>
-          <summary>1000 products</summary>
-          <Selection />
-        </div>
-      </header>
+      <Header />
       <hr className={headerStyles.split} />
       <ul className={mainStyles.ul}>
         {data.slice(0, 20).map(item => (
