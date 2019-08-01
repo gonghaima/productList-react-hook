@@ -19,6 +19,7 @@ https://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5
 - [x] pagination - dispatch an event onPageChange
 - [x] pagination - use fetched data from real api
 - [x] pagination - set up initial page
+- [ ] select - dispatch an action on change
 - [x] product list - use fetched data from real api
 - [ ] use & enable router to support absolute url of current page
 - [ ] use context/hook to manage global state
