@@ -14,12 +14,6 @@ header select {
   color: var(--header-select-color);
   border: 0;
 }
-
-.split {
-  width: 98%;
-  border: 0.5px solid var(--hr-color);
-}
-
 .displaySelection {
   display: flex;
   justify-content: space-between;

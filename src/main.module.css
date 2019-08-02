@@ -35,6 +35,10 @@ figure {
   margin: 0;
   box-sizing: border-box;
 }
+.split {
+  width: 98%;
+  border: 0.5px solid var(--hr-color);
+}
 h2 {
   font-size: var(--font-size-r1);
   font-weight: bold;
