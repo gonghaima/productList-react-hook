@@ -23,7 +23,7 @@ https://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5
 - [x] product list - use fetched data from real api
 - [x] make header into seperate component
 - [x] make product list into main component
-- [ ] move select values into config
+- [x] move select values into config
 - [ ] use & enable router to support absolute url of current page
 - [ ] use context/hook to manage global state
   - [ ] add mock in global context
