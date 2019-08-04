@@ -1,8 +1,11 @@
 // import { data } from "../mock/productsData";
 // const API_URL = "https://protected-basin-78090.herokuapp.com/api/products/all";
-const API_URL = process.env.REACT_APP_API_URL;
+// const API_URL = process.env.REACT_APP_API_URL;
+
+import { apiUrl } from "../config";
+
 export const fetchDataAction = async dispatch => {
-  const data = await fetch(API_URL);
+  const data = await fetch(apiUrl);
   const dataJSON = await data.json();
   return dispatch({
     type: "FETCH_DATA",
