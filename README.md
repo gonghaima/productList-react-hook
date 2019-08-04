@@ -2,8 +2,8 @@
 
 ## productList-express-server details
 
-https://protected-basin-78090.herokuapp.com/api/products/all
-https://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5
+<https://protected-basin-78090.herokuapp.com/api/products/all>
+<https://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5>
 
 ## TODO
 
@@ -38,17 +38,21 @@ https://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5
 - CSS variables
 
   - css variables works inside of the css selector, like
+  
     ```javascript
     .myClass {
         font-size: var(--my-self-defined-size)
     }
     ```
+
   - not works in media query, like
+  
     ```javascript
     @media (min-width: var(--my-self-defined-size)) {
       ...
     }
     ```
+
   - a few options there
     - sass or postCSS
     - use media query at root to assign different values to the same variable
