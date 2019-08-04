@@ -27,8 +27,8 @@ https://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5
 - [ ] use suspect with loader
 - [ ] use & enable router to support absolute url of current page
 - [ ] use context/hook to manage global state
-  - [ ] add mock in global context
-  - [ ] read it in root component
+  - [x] add mock in global context
+  - [x] read it in root component
 - [ ] use real api to replace mock api
 - [ ] fix cors issue
 - [ ] build a pagination component
