@@ -13,7 +13,9 @@ export default () => {
       }
     >
       {state.itemsPerPage.map(num => (
-        <option value={num}>{num} per page</option>
+        <option value={num} key={`displayOption${num}`}>
+          {num} per page
+        </option>
       ))}
     </select>
   );
