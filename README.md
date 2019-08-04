@@ -24,6 +24,7 @@ https://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5
 - [x] make header into seperate component
 - [x] make product list into main component
 - [x] move select values into config
+- [ ] use suspect with loader
 - [ ] use & enable router to support absolute url of current page
 - [ ] use context/hook to manage global state
   - [ ] add mock in global context
