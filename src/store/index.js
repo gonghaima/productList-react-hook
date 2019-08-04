@@ -1,5 +1,6 @@
 import React from "react";
 import reducers from "../reducers";
+import { itemsPerPage } from "../config";
 export const Store = React.createContext();
 
 const initialState = {
@@ -11,7 +12,8 @@ const initialState = {
   marginPagesDisplayed: 2,
   pageRangeDisplayed: 5,
   itemPerPage: 50,
-  initialPage: 3
+  initialPage: 3,
+  itemsPerPage
 };
 
 export function StoreProvider(props) {

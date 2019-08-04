@@ -12,11 +12,9 @@ export default () => {
         })
       }
     >
-      <option value="4">4 per page</option>
-      <option value="8">8 per page</option>
-      <option value="10">10 per page</option>
-      <option value="20">20 per page</option>
-      <option value="40">40 per page</option>
+      {state.itemsPerPage.map(num => (
+        <option value={num}>{num} per page</option>
+      ))}
     </select>
   );
 };
