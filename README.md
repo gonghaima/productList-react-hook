@@ -20,6 +20,7 @@
 - [x] pagination - use fetched data from real api
 - [x] pagination - set up initial page
 - [x] select - dispatch an action on change
+- [ ] select - with real data
 - [x] product list - use fetched data from real api
 - [x] make header into seperate component
 - [x] make product list into main component
@@ -38,7 +39,7 @@
 - CSS variables
 
   - css variables works inside of the css selector, like
-  
+
     ```javascript
     .myClass {
         font-size: var(--my-self-defined-size)
@@ -46,7 +47,7 @@
     ```
 
   - not works in media query, like
-  
+
     ```javascript
     @media (min-width: var(--my-self-defined-size)) {
       ...
