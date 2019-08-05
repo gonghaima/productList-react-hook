@@ -17,7 +17,8 @@
 - [x] use .env to store url, etc.
 - [x] pass state to pagination component, so pagination reflect the status of data
 - [x] pagination - dispatch an event onPageChange
-- [x] pagination - use fetched data from real api
+- [x] pagination - dispatch an event onPageChange
+- [ ] pagination - dispatch data and make api calls
 - [x] pagination - set up initial page
 - [x] select - dispatch an action on change
 - [ ] select - with real data
