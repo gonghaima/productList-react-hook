@@ -12,13 +12,15 @@ import Main from "./components/Main";
 
 function App() {
   const { state, dispatch } = React.useContext(Store);
+  const { apiUrl, initialPage, selectCurrent } = state;
 
   React.useEffect(() => {
-    state.products.length === 0 && fetchDataAction(dispatch);
+    state.products.length === 0 &&
+      fetchDataAction(dispatch, apiUrl, initialPage, selectCurrent);
     if (state && state.products && state.products.length > 0) {
       console.log(`state.products.length:${state.products.length}`);
     }
-  }, [dispatch, state]);
+  }, [apiUrl, dispatch, initialPage, selectCurrent, state]);
 
   const props = {
     products: state.products,

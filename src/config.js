@@ -10,7 +10,6 @@ const pagination = {
   hasNext: false,
   hasPrevious: false,
   products: [],
-  allProducts: [],
   pageRangeDisplayed: 5
 };
 
