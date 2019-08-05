@@ -3,7 +3,7 @@ import reducers from "../reducers";
 import { pagination, apiUrl } from "../config";
 export const Store = React.createContext();
 
-const initialState = { ...pagination, ...apiUrl };
+const initialState = { ...pagination, apiUrl };
 
 export function StoreProvider(props) {
   const [state, dispatch] = React.useReducer(reducers, initialState);

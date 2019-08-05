@@ -4,7 +4,13 @@ const product = (state, action) => {
       const pageCount = Math.ceil(
         action.payload.products.length / state.itemsPerPage
       );
-      const ns = { ...state, ...action.payload, ...{ pageCount } };
+      const ns = {
+        ...state,
+        ...action.payload,
+        ...{ pageCount },
+        ...{ allProducts: action.payload.products }
+      };
+      debugger;
       return ns;
     default:
       return state;

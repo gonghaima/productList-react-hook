@@ -5,6 +5,8 @@ import footerStyles from "../footer.module.css";
 
 export default () => {
   const { state, dispatch } = React.useContext(Store);
+  console.log(`state.pageCount: ${state.pageCount}`);
+
   return (
     <div className={footerStyles.general}>
       <ReactPaginate
