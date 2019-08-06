@@ -21,7 +21,7 @@
 - [ ] pagination - dispatch data and make api calls
 - [x] pagination - set up initial page
 - [x] select - dispatch an action on change
-- [ ] select - with real data
+- [x] select - with real data
 - [x] product list - use fetched data from real api
 - [x] make header into seperate component
 - [x] make product list into main component
