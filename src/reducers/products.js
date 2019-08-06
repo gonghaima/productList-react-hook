@@ -1,7 +1,8 @@
 const product = (state, action) => {
   switch (action.type) {
     case "FETCH_DATA":
-      const pageCount = Math.ceil(action.payload.total / state.selectCurrent);
+      const pageCount = Math.ceil(action.payload.total / state.currentLimit);
+      debugger;
       const ns = {
         ...state,
         ...action.payload,

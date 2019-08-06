@@ -17,7 +17,7 @@ export default () => {
         pageCount={state.pageCount}
         marginPagesDisplayed={state.marginPagesDisplayed}
         pageRangeDisplayed={state.pageRangeDisplayed}
-        initialPage={state.initialPage}
+        initialPage={state.currentOffset}
         onPageChange={() =>
           dispatch({
             type: "SET_PAGE",
