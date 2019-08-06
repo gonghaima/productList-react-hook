@@ -8,9 +8,10 @@ const urlBuilder = (url, offset, limit) =>
 export const fetchDataAction = async (dispatch, url, offset, limit) => {
   const data = await fetch(urlBuilder(url, offset, limit));
   const dataJSON = await data.json();
+  debugger;
   return dispatch({
     type: "FETCH_DATA",
-    payload: dataJSON
+    payload: { ...dataJSON, ...{ currentLimit: limit, currentOffset: offset } }
   });
 };
 
