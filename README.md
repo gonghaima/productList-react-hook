@@ -20,6 +20,7 @@
 - [x] pagination - dispatch an event onPageChange
 - [x] pagination - dispatch data and make api calls
 - [x] pagination - set up initial page
+- [ ] pagination - position at bottom of the page, even only 4 items per page
 - [x] select - dispatch an action on change
 - [x] select - with real data
 - [x] product list - use fetched data from real api
