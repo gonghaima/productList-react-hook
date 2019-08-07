@@ -1,10 +1,12 @@
 import React from "react";
 import ReactPaginate from "react-paginate";
 import { Store } from "../store";
+import { fetchDataAction } from "../actions";
 import footerStyles from "../footer.module.css";
 
 export default () => {
   const { state, dispatch } = React.useContext(Store);
+  const { apiUrl, currentLimit, currentOffset } = state;
   console.log(`state.pageCount: ${state.pageCount}`);
 
   return (
@@ -18,11 +20,8 @@ export default () => {
         marginPagesDisplayed={state.marginPagesDisplayed}
         pageRangeDisplayed={state.pageRangeDisplayed}
         initialPage={state.currentOffset}
-        onPageChange={() =>
-          dispatch({
-            type: "SET_PAGE",
-            payload: "nono"
-          })
+        onPageChange={e =>
+          fetchDataAction(dispatch, apiUrl, e.selected, currentLimit)
         }
         containerClassName="pagination"
         subContainerClassName="pages pagination"
