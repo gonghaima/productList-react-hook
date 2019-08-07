@@ -31,7 +31,7 @@
 - [ ] use context/hook to manage global state
   - [x] add mock in global context
   - [x] read it in root component
-- [ ] use real api to replace mock api
+- [x] use real api to replace mock api
 - [ ] fix cors issue
 - [ ] build a pagination component
 
