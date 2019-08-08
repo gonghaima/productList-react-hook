@@ -14,7 +14,6 @@ const urlBuilder = (url, offset, limit) =>
   `${url}?offset=${offset}&limit=${limit}`;
 
 export const fetchDataAction = async (dispatch, url, offset, limit) => {
-  // debugger;
   // await sleep(3000);
   const data = await fetch(urlBuilder(url, offset, limit));
   const dataJSON = await data.json();
@@ -23,6 +22,3 @@ export const fetchDataAction = async (dispatch, url, offset, limit) => {
     payload: { ...dataJSON, ...{ currentLimit: limit, currentOffset: offset } }
   });
 };
-
-// https://protected-basin-78090.herokuapp.com/api/products/all
-// ttps://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5
