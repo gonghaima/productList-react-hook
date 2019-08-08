@@ -8,7 +8,7 @@ export default () => {
     <>
       <hr className={mainStyles.split} />
       <ul className={mainStyles.ul}>
-        {state.products.slice(0, 20).map(item => (
+        {state.products.map(item => (
           <li key={`${item.product_name}_${item.id}`} className={mainStyles.li}>
             <div className={mainStyles.content}>
               <figure>
