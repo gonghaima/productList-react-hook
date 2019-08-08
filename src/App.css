@@ -9,6 +9,9 @@
   padding: 16px;
   min-height: 100vh;
   background: var(--app-bg-color);
+
+  display: flex;
+  flex-direction: column;
 }
 
 .App > div {
