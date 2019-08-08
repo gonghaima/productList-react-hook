@@ -1,30 +1,20 @@
-import React from "react";
+import React, { Suspense } from "react";
 import mainStyles from "../main.module.css";
 import { Store } from "../store";
 
+const ProductList = React.lazy(() => import("./ProductList"));
+
 export default () => {
-  const { state, dispatch } = React.useContext(Store);
+  const { state } = React.useContext(Store);
+  const props = {
+    products: state.products
+  };
   return (
-    <>
+    <Suspense fallback={<div>Loading...</div>}>
       <hr className={mainStyles.split} />
       <ul className={mainStyles.ul}>
-        {state.products.map(item => (
-          <li key={`${item.product_name}_${item.id}`} className={mainStyles.li}>
-            <div className={mainStyles.content}>
-              <figure>
-                <img src={item.product_image} alt={item.product_name} />
-              </figure>
-              <div className={mainStyles.hgroup}>
-                <h4 className={mainStyles.product_name}>{item.product_name}</h4>
-                <h4 className={mainStyles.product_description}>
-                  {item.description}
-                </h4>
-                <h6 className={mainStyles.product_price}>{item.price}</h6>
-              </div>
-            </div>
-          </li>
-        ))}
+        <ProductList {...props} />
       </ul>
-    </>
+    </Suspense>
   );
 };
