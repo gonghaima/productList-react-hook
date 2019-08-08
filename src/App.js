@@ -19,13 +19,6 @@ function App() {
     }
   }, [apiUrl, dispatch, currentOffset, currentLimit, state]);
 
-  const props = {
-    products: state.products,
-    hasNext: state.hasNext,
-    hasPrevious: state.hasPrevious,
-    total: state.products.length
-  };
-
   return (
     <div className="App">
       <Header />
