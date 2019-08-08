@@ -1,9 +1,6 @@
 import React from "react";
-import { data } from "./mock/productsData";
 import "./App.css";
 import "./header.module.css";
-import headerStyles from "./header.module.css";
-import mainStyles from "./main.module.css";
 import { Store } from "./store";
 import { fetchDataAction } from "./actions";
 import Pagination from "./components/Pagination";
