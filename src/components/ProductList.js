@@ -1,8 +1,7 @@
 import React from "react";
 import mainStyles from "../main.module.css";
-import { Store } from "../store";
 
-export default props => {
+export default function(props) {
   const { products } = props;
   return products.map(item => (
     <li key={`${item.product_name}_${item.id}`} className={mainStyles.li}>
@@ -18,4 +17,4 @@ export default props => {
       </div>
     </li>
   ));
-};
+}
