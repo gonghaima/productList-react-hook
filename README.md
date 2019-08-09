@@ -27,7 +27,8 @@
 - [x] make header into seperate component
 - [x] make product list into main component
 - [x] move select values into config
-- [ ] use suspect with loader
+- [ ] use suspense with loader
+  - [x] Notes from react org: Suspense lets components “wait” for something before rendering. Today, Suspense only supports one use case: loading components dynamically with React.lazy. In the future, it will support other use cases like data fetching.
 - [ ] use & enable router to support absolute url of current page
 - [ ] use context/hook to manage global state
   - [x] add mock in global context
