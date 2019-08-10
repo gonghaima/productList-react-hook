@@ -1,13 +1,9 @@
 import React from "react";
 import mainStyles from "../main.module.css";
-import logo from "../logo.svg";
-import { STATUS } from "../config";
 
 export default function(props) {
-  const { products, status } = props;
-  return status === STATUS.RUNNING ? (
-    <img src={logo} className="App-logo" alt="logo" />
-  ) : (
+  const { products } = props;
+  return (
     products.map(item => (
       <li key={`${item.product_name}_${item.id}`} className={mainStyles.li}>
         <div className={mainStyles.content}>
