@@ -14,9 +14,6 @@ function App() {
   React.useEffect(() => {
     state.products.length === 0 &&
       fetchDataAction(dispatch, apiUrl, currentOffset, currentLimit);
-    if (state && state.products && state.products.length > 0) {
-      console.log(`state.products.length:${state.products.length}`);
-    }
   }, [apiUrl, dispatch, currentOffset, currentLimit, state]);
 
   return (

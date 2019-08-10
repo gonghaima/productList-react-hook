@@ -7,7 +7,8 @@ const ProductList = React.lazy(() => import("./ProductList"));
 export default () => {
   const { state } = React.useContext(Store);
   const props = {
-    products: state.products
+    products: state.products,
+    status: state.status
   };
   return (
     <Suspense fallback={<div>Loading...</div>}>
