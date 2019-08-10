@@ -1,9 +1,9 @@
 import React from "react";
 import reducers from "../reducers";
-import { pagination, apiUrl } from "../config";
+import { pagination, apiUrl, STATUS } from "../config";
 export const Store = React.createContext();
 
-const initialState = { ...pagination, apiUrl };
+const initialState = { ...pagination, apiUrl, ...{ status: STATUS.IDLE } };
 
 export function StoreProvider(props) {
   const [state, dispatch] = React.useReducer(reducers, initialState);

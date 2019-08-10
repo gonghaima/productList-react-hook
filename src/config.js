@@ -13,4 +13,12 @@ const pagination = {
   pageRangeDisplayed: 5
 };
 
-export { apiUrl, pagination };
+const STATUS = {
+  IDLE: 'idle',
+  RUNNING: 'running',
+  READY: 'ready',
+  SUCCESS: 'success',
+  ERROR: 'error',
+};
+
+export { apiUrl, pagination, STATUS };
