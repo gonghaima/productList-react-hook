@@ -3,6 +3,7 @@ import "./App.css";
 import "./header.module.css";
 import { Store } from "./store";
 import { fetchDataAction } from "./actions";
+import { STATUS } from "./config";
 import Pagination from "./components/Pagination";
 import Header from "./components/Header";
 import Main from "./components/Main";
@@ -13,6 +14,7 @@ function App() {
 
   React.useEffect(() => {
     state.products.length === 0 &&
+      state.status !== STATUS.RUNNING &&
       fetchDataAction(dispatch, apiUrl, currentOffset, currentLimit);
   }, [apiUrl, dispatch, currentOffset, currentLimit, state]);
 

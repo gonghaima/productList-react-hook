@@ -1,11 +1,12 @@
 import React from "react";
 import mainStyles from "../main.module.css";
+import logo from "../logo.svg";
 import { STATUS } from "../config";
 
 export default function(props) {
   const { products, status } = props;
   return status === STATUS.RUNNING ? (
-    <h1>content is loading now....</h1>
+    <img src={logo} className="App-logo" alt="logo" />
   ) : (
     products.map(item => (
       <li key={`${item.product_name}_${item.id}`} className={mainStyles.li}>

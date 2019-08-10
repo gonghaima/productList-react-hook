@@ -19,7 +19,7 @@ export const fetchDataAction = async (dispatch, url, offset, limit) => {
     type: "LOADING_DATA",
     payload: {}
   });
-  await sleep(3000);
+  await sleep(90000);
   const data = await fetch(urlBuilder(url, offset, limit));
   const dataJSON = await data.json();
   dispatch({

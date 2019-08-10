@@ -7,7 +7,6 @@ import footerStyles from "../footer.module.css";
 export default () => {
   const { state, dispatch } = React.useContext(Store);
   const { apiUrl, currentLimit, currentOffset } = state;
-  console.log(`state.pageCount: ${state.pageCount}`);
 
   return (
     <div className={footerStyles.general}>
