@@ -1,7 +1,7 @@
 import React from "react";
 import mainStyles from "../main.module.css";
 
-export default function(props) {
+export default props => {
   const { products } = props;
   return (
     <ul className={mainStyles.ul}>
@@ -23,4 +23,4 @@ export default function(props) {
       ))}
     </ul>
   );
-}
+};
