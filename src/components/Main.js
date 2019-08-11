@@ -20,11 +20,7 @@ export default () => {
           <img src={logo} className="App-logo" alt="logo" />
           <p>Loading ...</p>
         </div>
-      )) || (
-        <ul className={mainStyles.ul}>
-          <ProductList {...props} />
-        </ul>
-      )}
+      )) || <ProductList {...props} />}
     </Suspense>
   );
 };
