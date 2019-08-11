@@ -42,10 +42,10 @@
 ## FEATURES
 
 ~~~~javascript
-React context api
-Hook
-Redux pattern
-CSS module
+* React context api
+* Hook
+* Redux pattern
+* CSS module
 ~~~~
 
 ## NOTES
