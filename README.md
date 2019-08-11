@@ -39,6 +39,15 @@
 - [ ] fix cors issue
 - [ ] build a pagination component
 
+## FEATURES
+
+~~~~javascript
+React context api
+Hook
+Redux pattern
+CSS module
+~~~~
+
 ## NOTES
 
 - CSS variables
