@@ -82,3 +82,41 @@
           }
       }
   ```
+
+- Long running promise simulation
+
+  - a function sleep
+
+    ```javascript
+    const sleep = duration => {
+      return new Promise(resolve => {
+        setTimeout(() => {
+          resolve();
+        }, duration);
+      });
+    };
+    ```
+
+  - call it like
+
+    ```javascript
+    sleep(8000);
+    ```
+
+  - an example
+
+  ```javascript
+      export const fetchDataAction = async (dispatch, url, offset, limit) => {
+        dispatch({
+          type: "LOADING_DATA",
+          payload: {}
+        });
+        await sleep(8000);
+        const data = await fetch(urlBuilder(url, offset, limit));
+        const dataJSON = await data.json();
+        dispatch({
+          type: "FETCH_DATA",
+          payload: { ...dataJSON, ...{ currentLimit: limit, currentOffset: offset } }
+        });
+      };
+  ```
