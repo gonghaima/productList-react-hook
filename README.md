@@ -36,7 +36,7 @@
   - [x] add mock in global context
   - [x] read it in root component
 - [x] use real api to replace mock api
-- [ ] smooth transition on list item
+- [x] smooth transition on list item
 - [ ] fix cors issue
 - [ ] build a pagination component
 
