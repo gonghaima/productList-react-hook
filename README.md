@@ -37,7 +37,7 @@
   - [x] read it in root component
 - [x] use real api to replace mock api
 - [x] smooth transition on list item
-- [ ] fix cors issue
+- [x] fix cors issue
 - [ ] build a pagination component
 
 ## FEATURES
