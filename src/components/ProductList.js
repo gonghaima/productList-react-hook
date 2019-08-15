@@ -1,8 +1,21 @@
 import React from "react";
+import { Store } from "../store";
+import { withRouter } from "react-router-dom";
+import { fetchDataAction } from "../actions";
+import { STATUS } from "../config";
 import mainStyles from "../main.module.css";
 
-export default props => {
-  const { products } = props;
+const ProductList = routerProps => {
+  const { state, dispatch } = React.useContext(Store);
+  const { apiUrl, currentOffset, currentLimit, products } = state;
+
+  debugger;
+  React.useEffect(() => {
+    state.products.length === 0 &&
+      state.status !== STATUS.RUNNING &&
+      fetchDataAction(dispatch, apiUrl, currentOffset, currentLimit);
+  }, [apiUrl, dispatch, currentOffset, currentLimit, state]);
+
   return (
     <ul className={mainStyles.ul}>
       {products.map(item => (
@@ -24,3 +37,5 @@ export default props => {
     </ul>
   );
 };
+
+export default withRouter(ProductList);
