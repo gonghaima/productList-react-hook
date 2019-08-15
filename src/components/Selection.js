@@ -1,14 +1,21 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import { Store } from "../store";
 import { fetchDataAction } from "../actions";
 
-export default () => {
+const Selection = routeProps => {
   const { state, dispatch } = React.useContext(Store);
   const { apiUrl, currentOffset } = state;
   return (
     <select
       onChange={e =>
-        fetchDataAction(dispatch, apiUrl, currentOffset, e.target.value)
+        fetchDataAction(
+          dispatch,
+          apiUrl,
+          currentOffset,
+          e.target.value,
+          routeProps.history
+        )
       }
     >
       {state.itemsPerPage.map(num => (
@@ -19,3 +26,5 @@ export default () => {
     </select>
   );
 };
+
+export default withRouter(Selection);

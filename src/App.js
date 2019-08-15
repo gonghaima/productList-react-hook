@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import "./header.module.css";
 import { Store } from "./store";
@@ -7,6 +8,7 @@ import { STATUS } from "./config";
 import Pagination from "./components/Pagination";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import HomePage from "./pages/HomePage";
 
 function App() {
   const { state, dispatch } = React.useContext(Store);
@@ -19,11 +21,10 @@ function App() {
   }, [apiUrl, dispatch, currentOffset, currentLimit, state]);
 
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <Pagination />
-    </div>
+    <BrowserRouter>
+      <Route path="/" exact component={HomePage} />
+      <Route path="/products/:pageItems/:pageNumber" component={HomePage} />
+    </BrowserRouter>
   );
 }
 

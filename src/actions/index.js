@@ -6,7 +6,13 @@ import { STATUS } from "../config";
 const urlBuilder = (url, offset, limit) =>
   `${url}?offset=${offset}&limit=${limit}`;
 
-export const fetchDataAction = async (dispatch, url, offset, limit) => {
+export const fetchDataAction = async (
+  dispatch,
+  url,
+  offset,
+  limit,
+  history
+) => {
   dispatch({
     type: "LOADING_DATA",
     payload: {}
@@ -17,4 +23,5 @@ export const fetchDataAction = async (dispatch, url, offset, limit) => {
     type: "FETCH_DATA",
     payload: { ...dataJSON, ...{ currentLimit: limit, currentOffset: offset } }
   });
+  history && history.push(`/products/${limit}/${offset + 1}`);
 };

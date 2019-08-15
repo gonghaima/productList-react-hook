@@ -6,12 +6,15 @@ import Loader from "./Loader";
 
 const ProductList = React.lazy(() => import("./ProductList"));
 
-export default () => {
+export default routeProps => {
   const { state } = React.useContext(Store);
   const props = {
-    products: state.products,
-    status: state.status,
-    isLoading: state.status === STATUS.RUNNING
+    ...{
+      products: state.products,
+      status: state.status,
+      isLoading: state.status === STATUS.RUNNING
+    },
+    ...routeProps
   };
   return (
     <Suspense fallback={<Loader />}>
