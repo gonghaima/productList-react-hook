@@ -1,20 +1,35 @@
 import React from "react";
 import { Store } from "../store";
 import { withRouter } from "react-router-dom";
-import { fetchDataAction } from "../actions";
+import { fetchDataAction, initialiseDataAction } from "../actions";
 import { STATUS } from "../config";
 import mainStyles from "../main.module.css";
 
 const ProductList = routerProps => {
   const { state, dispatch } = React.useContext(Store);
-  const { apiUrl, currentOffset, currentLimit, products } = state;
+  const { apiUrl, currentOffset, currentLimit, products, status } = state;
+  const {
+    match: {
+      params: { pageItems, pageNumber }
+    }
+  } = routerProps;
 
-  debugger;
   React.useEffect(() => {
-    state.products.length === 0 &&
-      state.status !== STATUS.RUNNING &&
-      fetchDataAction(dispatch, apiUrl, currentOffset, currentLimit);
-  }, [apiUrl, dispatch, currentOffset, currentLimit, state]);
+    if (products.length === 0 && status === STATUS.PRISTINE) {
+      debugger;
+      initialiseDataAction(dispatch, apiUrl, pageNumber - 1, pageItems);
+    }
+  }, [
+    apiUrl,
+    dispatch,
+    currentOffset,
+    currentLimit,
+    state,
+    products.length,
+    status,
+    pageNumber,
+    pageItems
+  ]);
 
   return (
     <ul className={mainStyles.ul}>

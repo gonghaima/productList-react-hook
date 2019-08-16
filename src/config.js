@@ -14,11 +14,13 @@ const pagination = {
 };
 
 const STATUS = {
-  IDLE: 'idle',
-  RUNNING: 'running',
-  READY: 'ready',
-  SUCCESS: 'success',
-  ERROR: 'error',
+  PRISTINE: "pristine",
+  IDLE: "idle",
+  START: "start",
+  RUNNING: "running",
+  READY: "ready",
+  SUCCESS: "success",
+  ERROR: "error"
 };
 
 export { apiUrl, pagination, STATUS };

@@ -116,7 +116,7 @@
         const data = await fetch(urlBuilder(url, offset, limit));
         const dataJSON = await data.json();
         dispatch({
-          type: "FETCH_DATA",
+          type: "INITIATING_DATA",
           payload: { ...dataJSON, ...{ currentLimit: limit, currentOffset: offset } }
         });
       };

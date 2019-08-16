@@ -19,9 +19,8 @@ export default () => {
         marginPagesDisplayed={state.marginPagesDisplayed}
         pageRangeDisplayed={state.pageRangeDisplayed}
         initialPage={state.currentOffset}
-        onPageChange={e =>
-          fetchDataAction(dispatch, apiUrl, e.selected, currentLimit)
-        }
+        onPageChange={e => () =>
+          fetchDataAction(dispatch, apiUrl, e.selected, currentLimit)}
         containerClassName="pagination"
         subContainerClassName="pages pagination"
         activeClassName="active"
