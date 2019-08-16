@@ -10,15 +10,17 @@ export default () => {
 
   return (
     <div className={footerStyles.general}>
+      <div>
+        cf {state.currentOffset} pc {state.pageCount}
+      </div>
       <ReactPaginate
         previousLabel={"< Previous page"}
         nextLabel={"Next page >"}
         breakLabel="..."
         breakClassName="break-me"
-        pageCount={state.pageCount}
         marginPagesDisplayed={state.marginPagesDisplayed}
         pageRangeDisplayed={state.pageRangeDisplayed}
-        initialPage={state.currentOffset}
+        forcePage={state.currentOffset}
         onPageChange={e => () =>
           fetchDataAction(dispatch, apiUrl, e.selected, currentLimit)}
         containerClassName="pagination"

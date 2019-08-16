@@ -36,7 +36,7 @@ export const initialiseDataAction = async (
 ) => {
   dispatch({
     type: "INITIATING_DATA",
-    payload: {}
+    payload: { currentOffset: offset }
   });
   debugger;
   const data = await fetch(urlBuilder(url, offset, limit));
