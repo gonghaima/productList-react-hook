@@ -17,7 +17,9 @@ const ProductList = routerProps => {
   React.useEffect(() => {
     if (products.length === 0 && status === STATUS.PRISTINE) {
       debugger;
-      initialiseDataAction(dispatch, apiUrl, pageNumber - 1, pageItems);
+      if (pageItems)
+        initialiseDataAction(dispatch, apiUrl, pageNumber - 1, pageItems);
+      else initialiseDataAction(dispatch, apiUrl, currentOffset, currentLimit);
     }
   }, [
     apiUrl,
