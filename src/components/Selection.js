@@ -6,16 +6,22 @@ import { fetchDataAction } from "../actions";
 const Selection = routeProps => {
   const { state, dispatch } = React.useContext(Store);
   const { apiUrl, currentOffset, currentLimit } = state;
-  const doSth = (limit, offset, history) =>
-    history && history.push(`/products/${limit}/${offset + 1}`);
   return (
     <select
-      onChange={e => doSth(e.target.value, currentOffset, routeProps.history)}
-      value={state.currentLimit}
+      onChange={e =>
+        fetchDataAction(
+          dispatch,
+          apiUrl,
+          currentOffset,
+          e.target.value,
+          routeProps.history
+        )
+      }
+      value={currentLimit}
     >
       {state.itemsPerPage.map(num => (
         <option value={num} key={`displayOption${num}`}>
-          {num} {state.status}
+          {num} per page
         </option>
       ))}
     </select>
