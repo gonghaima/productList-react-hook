@@ -12,13 +12,13 @@ const Pagination = ({ history }) => {
 
   return (
     <div className={footerStyles.general}>
-      crrent offset {currentOffset}
       <ReactPaginate
         previousLabel={"< Previous page"}
         nextLabel={"Next page >"}
         breakLabel="..."
         breakClassName="break-me"
         marginPagesDisplayed={state.marginPagesDisplayed}
+        pageCount={state.pageCount}
         pageRangeDisplayed={state.pageRangeDisplayed}
         forcePage={state.currentOffset}
         onPageChange={e =>
