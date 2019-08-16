@@ -10,9 +10,6 @@ export default () => {
 
   return (
     <div className={footerStyles.general}>
-      <div>
-        cf {state.currentOffset} pc {state.pageCount}
-      </div>
       <ReactPaginate
         previousLabel={"< Previous page"}
         nextLabel={"Next page >"}
