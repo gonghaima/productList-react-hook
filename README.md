@@ -109,7 +109,7 @@
   ```javascript
       export const fetchDataAction = async (dispatch, url, offset, limit) => {
         dispatch({
-          type: "LOADING_DATA",
+          type: "FETCHING_DATA",
           payload: {}
         });
         await sleep(8000);

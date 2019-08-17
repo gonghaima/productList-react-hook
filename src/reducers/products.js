@@ -2,8 +2,7 @@ import { STATUS } from "../config";
 const product = (state, action) => {
   let pageCount;
   switch (action.type) {
-    case "INITIATING_DATA":
-    case "LOADING_DATA":
+    case "FETCHING_DATA":
       return {
         ...state,
         ...{ status: STATUS.RUNNING }

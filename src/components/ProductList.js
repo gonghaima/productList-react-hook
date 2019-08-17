@@ -1,7 +1,7 @@
 import React from "react";
 import { Store } from "../store";
 import { withRouter } from "react-router-dom";
-import { initialiseDataAction } from "../actions";
+import { fetchDataAction } from "../actions";
 import { STATUS } from "../config";
 import mainStyles from "../main.module.css";
 
@@ -18,21 +18,9 @@ const ProductList = routerProps => {
   React.useEffect(() => {
     if (products.length === 0 && status === STATUS.PRISTINE) {
       if (pageItems)
-        initialiseDataAction(
-          dispatch,
-          apiUrl,
-          pageNumber - 1,
-          pageItems,
-          history
-        );
+        fetchDataAction(dispatch, apiUrl, pageNumber - 1, pageItems, history);
       else
-        initialiseDataAction(
-          dispatch,
-          apiUrl,
-          currentOffset,
-          currentLimit,
-          history
-        );
+        fetchDataAction(dispatch, apiUrl, currentOffset, currentLimit, history);
     }
   }, [
     apiUrl,
