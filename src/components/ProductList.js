@@ -1,7 +1,7 @@
 import React from "react";
 import { Store } from "../store";
 import { withRouter } from "react-router-dom";
-import { fetchDataAction, initialiseDataAction } from "../actions";
+import { initialiseDataAction } from "../actions";
 import { STATUS } from "../config";
 import mainStyles from "../main.module.css";
 
@@ -17,7 +17,6 @@ const ProductList = routerProps => {
 
   React.useEffect(() => {
     if (products.length === 0 && status === STATUS.PRISTINE) {
-      debugger;
       if (pageItems)
         initialiseDataAction(
           dispatch,
@@ -35,7 +34,18 @@ const ProductList = routerProps => {
           history
         );
     }
-  }, [apiUrl, dispatch, currentOffset, currentLimit, state, products.length, status, pageNumber, pageItems, history]);
+  }, [
+    apiUrl,
+    dispatch,
+    currentOffset,
+    currentLimit,
+    state,
+    products.length,
+    status,
+    pageNumber,
+    pageItems,
+    history
+  ]);
 
   return (
     <ul className={mainStyles.ul}>
