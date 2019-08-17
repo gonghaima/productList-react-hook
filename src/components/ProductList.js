@@ -9,6 +9,7 @@ const ProductList = routerProps => {
   const { state, dispatch } = React.useContext(Store);
   const { apiUrl, currentOffset, currentLimit, products, status } = state;
   const {
+    history,
     match: {
       params: { pageItems, pageNumber }
     }
@@ -18,20 +19,23 @@ const ProductList = routerProps => {
     if (products.length === 0 && status === STATUS.PRISTINE) {
       debugger;
       if (pageItems)
-        initialiseDataAction(dispatch, apiUrl, pageNumber - 1, pageItems);
-      else initialiseDataAction(dispatch, apiUrl, currentOffset, currentLimit);
+        initialiseDataAction(
+          dispatch,
+          apiUrl,
+          pageNumber - 1,
+          pageItems,
+          history
+        );
+      else
+        initialiseDataAction(
+          dispatch,
+          apiUrl,
+          currentOffset,
+          currentLimit,
+          history
+        );
     }
-  }, [
-    apiUrl,
-    dispatch,
-    currentOffset,
-    currentLimit,
-    state,
-    products.length,
-    status,
-    pageNumber,
-    pageItems
-  ]);
+  }, [apiUrl, dispatch, currentOffset, currentLimit, state, products.length, status, pageNumber, pageItems, history]);
 
   return (
     <ul className={mainStyles.ul}>

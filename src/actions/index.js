@@ -45,4 +45,5 @@ export const initialiseDataAction = async (
     type: "DATA_FETCHED",
     payload: { ...dataJSON, ...{ currentLimit: limit, currentOffset: offset } }
   });
+  history && history.push(`/products/${limit}/${offset + 1}`);
 };
