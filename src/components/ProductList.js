@@ -3,7 +3,7 @@ import { Store } from "../store";
 import { withRouter } from "react-router-dom";
 import { fetchDataAction } from "../actions";
 import { STATUS } from "../config";
-import mainStyles from "../main.module.css";
+import mainStyles from "./Main/main.module.css";
 
 const ProductList = routerProps => {
   const { state, dispatch } = React.useContext(Store);

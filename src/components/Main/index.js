@@ -1,12 +1,12 @@
 import React, { Suspense } from "react";
-import mainStyles from "../main.module.css";
-import { STATUS } from "../config";
-import { Store } from "../store";
-import Loader from "./Loader";
+import mainStyles from "./main.module.css";
+import { STATUS } from "../../config";
+import { Store } from "../../store";
+import Loader from "../Loader";
 
-const ProductList = React.lazy(() => import("./ProductList"));
+const ProductList = React.lazy(() => import("../ProductList"));
 
-export default () => {
+export const Main = () => {
   const { state } = React.useContext(Store);
   const props = {
     products: state.products,
