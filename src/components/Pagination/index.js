@@ -3,14 +3,14 @@ import { withRouter } from "react-router-dom";
 import ReactPaginate from "react-paginate";
 import { Store } from "../../store";
 import { fetchDataAction } from "../../actions";
-import paginationStyles from "./pagination.module.css";
+import "./pagination.css";
 
 const Pagination = ({ history }) => {
   const { state, dispatch } = React.useContext(Store);
   const { apiUrl, currentLimit, currentOffset } = state;
 
   return (
-    <div className={paginationStyles.general}>
+    <div className="paginationContainer">
       <ReactPaginate
         previousLabel={"< Previous page"}
         nextLabel={"Next page >"}
