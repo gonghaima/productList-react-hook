@@ -1,8 +1,8 @@
 import React from "react";
-import headerStyles from "../header.module.css";
-import Selection from "./Selection";
+import headerStyles from "./header.module.css";
+import Selection from "../Selection";
 
-export default (props) => {
+export default props => {
   return (
     <header>
       <h2>All Products</h2>
