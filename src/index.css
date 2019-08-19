@@ -39,3 +39,39 @@ body > div {
     transform: rotate(360deg);
   }
 }
+
+.App {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  padding: 16px;
+  min-height: 100vh;
+  background: var(--app-bg-color);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.App > div {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .App {
+    padding: 32px 64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .App {
+    padding: 64px 64px;
+  }
+}
