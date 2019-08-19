@@ -7,7 +7,7 @@ import "./pagination.css";
 
 const Pagination = ({ history }) => {
   const { state, dispatch } = React.useContext(Store);
-  const { apiUrl, currentLimit, currentOffset } = state;
+  const { apiUrl, currentLimit, currentOffset, marginPagesDisplayed, pageRangeDisplayed, pageCount } = state;
 
   return (
     <div className="paginationContainer">
@@ -16,10 +16,10 @@ const Pagination = ({ history }) => {
         nextLabel={"Next page >"}
         breakLabel="..."
         breakClassName="break-me"
-        marginPagesDisplayed={state.marginPagesDisplayed}
-        pageCount={state.pageCount}
-        pageRangeDisplayed={state.pageRangeDisplayed}
-        forcePage={state.currentOffset}
+        marginPagesDisplayed={marginPagesDisplayed}
+        pageCount={pageCount}
+        pageRangeDisplayed={pageRangeDisplayed}
+        forcePage={currentOffset}
         onPageChange={e =>
           fetchDataAction(dispatch, apiUrl, e.selected, currentLimit, history)
         }
