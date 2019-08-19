@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import mainStyles from "./main.module.css";
 import { STATUS } from "../../config";
 import { Store } from "../../store";
-import Loader from "../Loader";
+import { Loader } from "../Loader/index";
 
 const ProductList = React.lazy(() => import("../ProductList"));
 

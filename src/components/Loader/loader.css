@@ -1,0 +1,24 @@
+.Loader {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Loader img {
+  animation: loader-spin infinite 20s linear;
+  height: 12vmin;
+  pointer-events: none;
+}
+.Loader p {
+  display: inline;
+  text-align: center;
+}
+
+@keyframes loader-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
