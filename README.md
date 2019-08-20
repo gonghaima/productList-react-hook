@@ -32,7 +32,7 @@
   - [x] Use library to enable data fetching - not required. The current implementation of reac-cache does not fit well into my redux like architecture, will keep my own loading state for now.
   - [x] Create loading state / loader
 - [x] use & enable router to support absolute url of current page
-- [ ] use context/hook to manage global state
+- [x] use context/hook to manage global state
   - [x] add mock in global context
   - [x] read it in root component
 - [x] use real api to replace mock api
