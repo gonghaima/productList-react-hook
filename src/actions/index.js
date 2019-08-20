@@ -1,4 +1,3 @@
-import { STATUS } from "../config";
 // import { data } from "../mock/productsData";
 // const API_URL = "https://protected-basin-78090.herokuapp.com/api/products/all";
 // const API_URL = process.env.REACT_APP_API_URL;
