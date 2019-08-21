@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { Store } from "../store";
-import { fetchDataAction } from "../actions";
+import { Store } from "../../store";
+import { fetchDataAction } from "../../actions";
 
 const Selection = routeProps => {
   const { state, dispatch } = React.useContext(Store);
