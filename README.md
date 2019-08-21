@@ -9,7 +9,7 @@
 
 - [x] layout styling
 - [x] implement react-paginate lib
-- [ ] styling the react-paginate component
+- [x] styling the react-paginate component
   - [x] active items
   - [x] disabled items
   - [x] responsive
