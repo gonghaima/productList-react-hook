@@ -38,6 +38,7 @@
 - [x] use real api to replace mock api
 - [x] smooth transition on list item
 - [x] fix cors issue
+- [ ] add unit test
 - [ ] build a pagination component
 
 ## FEATURES
