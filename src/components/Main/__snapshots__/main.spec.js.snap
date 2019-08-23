@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mock hook 1`] = `
+<React.Suspense
+  fallback={<Loader />}
+>
+  <hr
+    className="split"
+  />
+  <Loader />
+</React.Suspense>
+`;
