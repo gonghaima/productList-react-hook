@@ -4,5 +4,5 @@ import Header from "./index";
 
 it("Header component renders without crashing", () => {
   const HeaderComponent = shallow(<Header />);
-  expect(HeaderComponent).toMatchSnapshot();
+  expect(HeaderComponent.debug()).toMatchSnapshot();
 });
