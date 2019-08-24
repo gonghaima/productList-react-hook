@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`mock hook 1`] = `
+exports[`Main component should be contains loader if STATUS is running 1`] = `
 <React.Suspense
   fallback={<Loader />}
 >

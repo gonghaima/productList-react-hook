@@ -5,18 +5,12 @@ import { Main } from "./index";
 let realUseContext;
 let useContextMock;
 
-const mock = {
-  itemsPerPage: [4, 8, 10, 20, 40],
-  currentLimit: 4,
-  currentOffset: 0,
-  marginPagesDisplayed: 2,
-  pageCount: 0,
-  total: 0,
-  hasNext: false,
-  hasPrevious: false,
-  products: [],
-  pageRangeDisplayed: 5,
+const running = {
   status: "running"
+};
+
+const ready = {
+  status: "ready"
 };
 // Setup mock
 beforeEach(() => {
@@ -28,8 +22,8 @@ afterEach(() => {
   React.useContext = realUseContext;
 });
 
-test("mock hook", () => {
-  useContextMock.mockReturnValue({ state: mock });
+test("Main component should be contains loader if STATUS is running", () => {
+  useContextMock.mockReturnValue({ state: running });
   const element = new ShallowRenderer().render(<Main />);
   expect(element.props.children[0].props.className).toBe("split");
   expect(element).toMatchSnapshot();
