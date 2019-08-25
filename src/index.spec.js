@@ -32,16 +32,6 @@ it("can render and update a counter", () => {
   const ul = container.querySelectorAll("ul");
   expect(ul[0].getAttribute("class")).toBe("pagination");
   expect(ul.length).toBe(1);
-  expect(ul[0]).toBe(undefined);
-  //   const button = container.querySelector("button");
-  //   const label = container.querySelector("p");
-  //   expect(label.textContent).toBe("You clicked 0 times");
-  //   expect(document.title).toBe("You clicked 0 times");
-
-  //   // Test second render and effect
-  //   act(() => {
-  //     button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
-  //   });
-  //   expect(label.textContent).toBe("You clicked 1 times");
-  //   expect(document.title).toBe("You clicked 1 times");
+  expect(process.env.NODE_ENV).toBe("test");
+  expect(ul[1]).toBe(undefined);
 });
