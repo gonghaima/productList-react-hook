@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader component renders without crashing 1`] = `
+"<div className=\\"Loader\\">
+  <img src=\\"logo.svg\\" alt=\\"spinner\\" />
+  <p>
+    Loading ...
+  </p>
+</div>"
+`;
