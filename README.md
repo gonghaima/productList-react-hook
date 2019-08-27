@@ -39,6 +39,7 @@
 - [x] smooth transition on list item
 - [x] fix cors issue
 - [ ] add unit test
+- [ ] deploy to a cloud server
 - [ ] build a pagination component
 
 ## FEATURES
