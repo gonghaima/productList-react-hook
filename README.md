@@ -40,6 +40,7 @@
 - [x] fix cors issue
 - [ ] add unit test
 - [ ] deploy to a cloud server
+  - [x] to Heroku cloud
 - [ ] build a pagination component
 
 ## FEATURES
