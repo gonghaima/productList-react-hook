@@ -74,6 +74,19 @@
 
 ## NOTES
 
+- Heroku deployment
+
+```code
+npx create-react-app@2.x $APP_NAME
+cd $APP_NAME
+git init
+heroku create $APP_NAME --buildpack mars/create-react-app
+git add .
+git commit -m "Start with create-react-app"
+git push heroku master
+heroku open
+```
+
 - CSS variables
 
   - css variables works inside of the css selector, like
