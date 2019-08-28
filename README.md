@@ -56,6 +56,7 @@
   - [x] read it in root component
 - [x] use real api to replace mock api
 - [x] smooth transition on list item
+- [ ] error handle for page out of range
 - [x] fix cors issue
 - [ ] add unit test
 - [ ] deploy to a cloud server
