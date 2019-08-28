@@ -2,8 +2,27 @@
 
 ## productList-express-server details
 
+- source code
+
+<https://github.com/gonghaima/productList-express-server>
+
+- hosted on
+
 <https://protected-basin-78090.herokuapp.com/api/products/all>
 <https://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5>
+
+## productList-express-client details
+
+- source code
+
+<https://github.com/gonghaima/productList-react-hook>
+
+- hosted on
+<https://productlist-client.herokuapp.com>
+
+## orginal data source
+
+ <https://raw.githubusercontent.com/gonghaima/data/master/products.json>
 
 ## TODO
 
