@@ -20,7 +20,7 @@ export const Main = () => {
     <Suspense fallback={<Loader />}>
       <hr className={mainStyles.split} />
       {(props.isLoading && <Loader />) ||
-        (props.isReady && props.notFound && <h1>Not found</h1>) || (
+        (props.isReady && props.notFound && <Loader txt="Not Found" />) || (
           <ProductList />
         )}
     </Suspense>
