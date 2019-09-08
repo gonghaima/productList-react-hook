@@ -11,13 +11,18 @@ export const Main = () => {
   const props = {
     products: state.products,
     status: state.status,
-    isLoading: state.status === STATUS.RUNNING
+    isLoading: state.status === STATUS.RUNNING,
+    isReady: state.status === STATUS.READY,
+    notFound: state.products.length === 0
   };
 
   return (
     <Suspense fallback={<Loader />}>
       <hr className={mainStyles.split} />
-      {(props.isLoading && <Loader />) || <ProductList />}
+      {(props.isLoading && <Loader />) ||
+        (props.isReady && props.notFound && <h1>Not found</h1>) || (
+          <ProductList />
+        )}
     </Suspense>
   );
 };
