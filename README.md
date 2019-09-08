@@ -59,7 +59,7 @@
 - [ ] error handle for page out of range
 - [x] fix cors issue
 - [ ] add unit test
-- [ ] deploy to a cloud server
+- [x] deploy to a cloud server
   - [x] to Heroku cloud
 - [ ] build a pagination component
 
