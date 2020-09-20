@@ -8,8 +8,9 @@
 
 - hosted on
 
-<https://protected-basin-78090.herokuapp.com/api/products/all>
-<https://protected-basin-78090.herokuapp.com/api/products?offset=3&limit=5>
+<https://productlist-express-server.herokuapp.com/api/products/all>
+
+<https://productlist-express-server.herokuapp.com/api/products?offset=3&limit=5>
 
 ## productList-express-client details
 
